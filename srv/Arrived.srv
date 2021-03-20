@@ -1,0 +1,5 @@
+#请求结构
+int32 index
+---
+#响应结构
+bool result

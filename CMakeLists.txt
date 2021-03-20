@@ -10,6 +10,7 @@ add_service_files(FILES
   GetWaypointByIndex.srv
   GetWaypointByName.srv
   GetChargerByName.srv
+  Arrived.srv
 )
 
 add_message_files(FILES
