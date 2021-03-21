@@ -128,13 +128,13 @@ int main(int argc, char** argv)
     //获取move_base的开启情况，要是没有开启，进入循环，阻隔运行巡航目标点。
     MoveBaseClient ac("move_base", true);
 
-    while(!ac.waitForServer(ros::Duration(5.0)))
-    {
-        //这个操作能关闭这个节点，直接退出这个程序的所有运行
-        if(!ros::ok())
-            break;
-        ROS_INFO("Waiting for the move_base action server to come up");
-    }
+    //while(!ac.waitForServer(ros::Duration(5.0)))
+    //{
+    //    //这个操作能关闭这个节点，直接退出这个程序的所有运行
+    //    if(!ros::ok())
+    //        break;
+    //    ROS_INFO("Waiting for the move_base action server to come up");
+    //}
 
     int nWPIndex = 0;//记录当前要去或者已经到了的目标点的代表。
     int nNumOfWaypoints = 0;//记录所有的目标点。
